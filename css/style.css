@@ -86,6 +86,26 @@ header h1 {
   padding: 13% 0;
 }
 
+h3 {
+  position: relative;
+  text-decoration: none;
+  padding-bottom: 5px;
+  white-space: nowrap;
+}
+h3::after {
+  content: "";
+  position: absolute;
+  left: 0%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  transition: all ease-in-out 400ms;
+}
+h3:hover::after {
+  width: 100%;
+  background: #444;
+}
+
 .zoom:hover {
   transform: scale(1.5);
   transition: transform 400ms;

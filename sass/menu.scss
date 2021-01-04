@@ -52,8 +52,27 @@
     text-decoration:none;
     padding: 13% 0;
     }
-  
-  .zoom:hover{
+h3 { 
+position: relative;
+text-decoration: none;
+padding-bottom: 5px;
+white-space: nowrap; 
+&::after { 
+content: '';            
+position: absolute;                
+left: 0%;          
+bottom: 0;           
+width: 0;          
+height: 2px;           
+transition: all ease-in-out 400ms;  
+ }     
+&:hover::after {
+   width: 100%; 
+background: #444;                     
+  } 
+        }
+.zoom:hover{
+
     transform:scale(1.5);
     transition:transform 400ms;
     overflow: hidden;
@@ -276,21 +295,6 @@
       transform: scale(0.9);
     }
   }
-  // .prochainement {
-  //   display: flex;
-  //   justify-content: space-evenly;
-  //   margin: auto;
-  //   padding: 6px 0 6px 0;
-  //   font-family: Calibri;
-  //   font-size: 1.7rem;
-  //   text-decoration: none;
-  //   background-color: #579c87;
-  //   color: #fdcb46;
-  //   border-radius: 10px;
-  //   width: 17%;
-  //   align-items: center;
-  
-  // }
   .prochainement__dot {
     display: flex;
     width: auto;
