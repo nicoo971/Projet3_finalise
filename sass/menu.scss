@@ -51,6 +51,11 @@
     align-items: center;
     text-decoration:none;
     padding: 13% 0;
+    transition: all ease-in-out 400ms; 
+    &:hover{
+      transform: scale(1.1);
+      transition: all ease-in-out 400ms; 
+    }
     }
 h3 { 
 position: relative;
@@ -107,9 +112,12 @@ background: #444;
   }
   #menu3{
     font-family: "Dancing Script";
+    background-color: white;
   }
   #menu4{
     font-family: "Dancing Script";
+    background-color: white;
+
   }
   
   #menu2 {background-color:#fff5fe;

@@ -78,6 +78,11 @@ header h1 {
   align-items: center;
   text-decoration: none;
   padding: 13% 0;
+  transition: all ease-in-out 400ms;
+}
+.menu__front:hover {
+  transform: scale(1.1);
+  transition: all ease-in-out 400ms;
 }
 
 h3 {
@@ -141,10 +146,12 @@ body {
 
 #menu3 {
   font-family: "Dancing Script";
+  background-color: white;
 }
 
 #menu4 {
   font-family: "Dancing Script";
+  background-color: white;
 }
 
 #menu2 {
