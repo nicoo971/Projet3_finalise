@@ -20,13 +20,24 @@
 @media all and (max-width:1024px)
 {.mainmenuexquisse,.mainmenupapilles,.mainmenuchic,.mainmenuenchant
     {
-    padding:4% !important;
-    width:100% !important;
+    padding:4%;
+    width:100%;
     h3 {
         padding:0%;
     }
 }
 .menus{
     width: 60%;
+}
+
+}
+@media all and (max-width:600px)
+{
+.generalmenus {
+    width: 100%;
+    .menu__front{
+        width: 44% 
+    }
+    
 }
 }

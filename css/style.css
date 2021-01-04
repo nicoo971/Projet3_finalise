@@ -55,12 +55,6 @@ a {
 
 header h1 {
   color: #fdcb46;
-  margin: 0em;
-  text-align: center;
-  position: relative;
-  top: 15px;
-  font-size: 2.5em;
-  text-decoration: none;
 }
 
 .menus {
@@ -731,8 +725,8 @@ a {
 }
 @media all and (max-width: 1024px) {
   .mainmenuexquisse, .mainmenupapilles, .mainmenuchic, .mainmenuenchant {
-    padding: 4% !important;
-    width: 100% !important;
+    padding: 4%;
+    width: 100%;
   }
   .mainmenuexquisse h3, .mainmenupapilles h3, .mainmenuchic h3, .mainmenuenchant h3 {
     padding: 0%;
@@ -740,6 +734,14 @@ a {
 
   .menus {
     width: 60%;
+  }
+}
+@media all and (max-width: 600px) {
+  .generalmenus {
+    width: 100%;
+  }
+  .generalmenus .menu__front {
+    width: 44%;
   }
 }
 * {
