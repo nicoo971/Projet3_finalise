@@ -94,7 +94,7 @@ h3::after {
   bottom: 0;
   width: 0;
   height: 2px;
-  transition: all ease-in-out 400ms;
+  transition: all ease-in-out 500ms;
 }
 h3:hover::after {
   width: 100%;
