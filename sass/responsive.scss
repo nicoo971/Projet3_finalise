@@ -1,44 +1,40 @@
-
-@media all and (min-width:1024px)
-
-{
-.menus{
+@media all and (min-width: 1024px) {
+  .menus {
     width: 60%;
-}
-.prochainement{
+  }
+  .prochainement {
     width: 20%;
-}
-.center{   
-    background-position:center; 
-}
-.generalmenus{
-    .menu__front{
-    width: 17vw;
-}
-}
-}
-@media all and (max-width:1024px)
-{.mainmenuexquisse,.mainmenupapilles,.mainmenuchic,.mainmenuenchant
-    {
-    padding:4%;
-    width:100%;
-    h3 {
-        padding:0%;
+  }
+  .center {
+    background-position: center;
+  }
+  .generalmenus {
+    .menu__front {
+      width: 17vw;
     }
+  }
 }
-.menus{
-    width: 60%;
-}
-
-}
-@media all and (max-width:600px)
-{
-.generalmenus {
+@media all and (max-width: 1024px) {
+  .mainmenuexquisse,
+  .mainmenupapilles,
+  .mainmenuchic,
+  .mainmenuenchant {
+    padding: 4%;
     width: 100%;
-    .menu__front{
-        width: 44% 
+    h3 {
+      padding: 0%;
     }
-
-    
+  }
+  .menus {
+    width: 60%;
+  }
 }
+@media all and (max-width: 600px) {
+  .generalmenus {
+    width: 100%;
+    .menu__front {
+      width: 44%;
+    }
+  
+  }
 }

@@ -87,7 +87,8 @@ h3 {
   padding-bottom: 5px;
   white-space: nowrap;
 }
-h3::after {
+
+.trait h3::after {
   content: "";
   position: absolute;
   left: 0%;
@@ -96,7 +97,7 @@ h3::after {
   height: 2px;
   transition: all ease-in-out 500ms;
 }
-h3:hover::after {
+.trait h3:hover::after {
   width: 100%;
   background: #444;
 }
@@ -119,7 +120,6 @@ body {
 
 #menu1 {
   background-color: #fce0dc;
-  padding: 9% 0;
 }
 
 .fab {
@@ -136,7 +136,8 @@ body {
   -webkit-background-clip: text;
 }
 
-#menu1 h2, h3 {
+#menu1 h2,
+h3 {
   font-family: "Dancing Script";
 }
 
@@ -158,14 +159,6 @@ body {
   font-family: "Montserrat Alternates", sans-serif;
 }
 
-@keyframes bars {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(0.9);
-  }
-}
 .prochainement {
   display: flex;
   justify-content: space-evenly;
@@ -177,7 +170,7 @@ body {
   background-color: #579c87;
   color: #fdcb46;
   border-radius: 10px;
-  width: 35%;
+  width: 286px;
   align-items: center;
 }
 .prochainement__dot {
@@ -247,10 +240,16 @@ header h1 {
   justify-content: space-between;
 }
 
-#menu1, #menu2, #menu3, #menu4 {
+#menu1,
+#menu2,
+#menu3,
+#menu4 {
   font-family: "Dancing Script";
 }
-#menu1 h3, #menu2 h3, #menu3 h3, #menu4 h3 {
+#menu1 h3,
+#menu2 h3,
+#menu3 h3,
+#menu4 h3 {
   text-transform: uppercase;
 }
 
@@ -262,7 +261,7 @@ header h1 {
   background-color: #fff5fe;
   font-family: "Arial, Helvetica, sans-serif";
   background-color: slateblue;
-  background-image: linear-gradient(45deg, #ffc042 0%, #6B0AC5);
+  background-image: linear-gradient(45deg, #ffc042 0%, #6b0ac5);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -274,7 +273,7 @@ header h1 {
   background-color: #fff5fe;
   font-family: "Dancing Script";
   background-color: slateblue;
-  background-image: linear-gradient(45deg, #ffc042 0%, #6B0AC5);
+  background-image: linear-gradient(45deg, #ffc042 0%, #6b0ac5);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -287,7 +286,7 @@ header h1 {
   background-color: #fff5fe;
   font-family: "Dancing Script";
   background-color: slateblue;
-  background-image: linear-gradient(45deg, #1A99F7, #00F0FC);
+  background-image: linear-gradient(45deg, #1a99f7, #00f0fc);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -299,7 +298,7 @@ header h1 {
   background-color: #fff5fe;
   font-family: "Dancing Script";
   background-color: slateblue;
-  background-image: linear-gradient(45deg, #1A99F7, #00F0FC);
+  background-image: linear-gradient(45deg, #1a99f7, #00f0fc);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -311,7 +310,7 @@ header h1 {
   background-color: #fff5fe;
   font-family: "Dancing Script";
   background-color: slateblue;
-  background-image: linear-gradient(45deg, #2B8A47, #9effd7);
+  background-image: linear-gradient(45deg, #2b8a47, #9effd7);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -323,7 +322,7 @@ header h1 {
   background-color: #fff5fe;
   font-family: "Dancing Script";
   background-color: slateblue;
-  background-image: linear-gradient(45deg, #2B8A47, #9effd7);
+  background-image: linear-gradient(45deg, #2b8a47, #9effd7);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -380,6 +379,8 @@ footer {
   padding-right: 3%;
   bottom: 0;
   height: 80px;
+  position: absolute;
+  width: 100%;
 }
 footer h4 {
   align-self: center;
@@ -410,6 +411,9 @@ body {
   text-align: center;
   margin: auto;
   box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.68);
+  padding-bottom: 90px;
+  position: relative;
+  min-height: 100vh;
 }
 
 .mainmenuenchant {
@@ -438,7 +442,7 @@ body {
   white-space: nowrap;
 }
 .mainmenuchic h1 {
-  background: linear-gradient(to right, #ffc042 0%, #6B0AC5 100%);
+  background: linear-gradient(to right, #ffc042 0%, #6b0ac5 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -490,7 +494,10 @@ h4 {
   margin-block-end: 0.83em;
 }
 
-.premier_trait, .premier_trait1, .premier_trait2, .premier_trait3 {
+.premier_trait,
+.premier_trait1,
+.premier_trait2,
+.premier_trait3 {
   display: flex;
   align-items: center;
   text-align: center;
@@ -688,7 +695,7 @@ a {
 }
 
 .appetit {
-  color: #CE8800;
+  color: #ce8800;
 }
 
 .papilles {
@@ -696,11 +703,12 @@ a {
 }
 
 .Gourmandises {
-  color: #1E90FF;
+  color: #1e90ff;
 }
 
 .prix2 {
   text-align-last: start;
+  font-size: 1.3em;
 }
 
 .prix {
@@ -727,11 +735,17 @@ a {
   }
 }
 @media all and (max-width: 1024px) {
-  .mainmenuexquisse, .mainmenupapilles, .mainmenuchic, .mainmenuenchant {
+  .mainmenuexquisse,
+.mainmenupapilles,
+.mainmenuchic,
+.mainmenuenchant {
     padding: 4%;
     width: 100%;
   }
-  .mainmenuexquisse h3, .mainmenupapilles h3, .mainmenuchic h3, .mainmenuenchant h3 {
+  .mainmenuexquisse h3,
+.mainmenupapilles h3,
+.mainmenuchic h3,
+.mainmenuenchant h3 {
     padding: 0%;
   }
 
