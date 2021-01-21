@@ -52,6 +52,7 @@
   padding: 13% 0;
   transition: all ease-in-out 400ms;
 }
+// proprietes des menus generaux page index
 h3 {
   position: relative;
   text-decoration: none;
@@ -72,6 +73,7 @@ h3 {
     width: 100%;
     background: #444;
   }
+  // trais pour les titres
 }
 .zoom:hover {
   transform: scale(1.5);
@@ -153,6 +155,7 @@ $bgcolor: #579c87;
     animation: bars $anim-dur backwards infinite;
     animation-direction: normal;
   }
+  // proprietes des points ensuite l'animation delay pour les disscocier
 
   &__dot--b1 {
     @include dot;
@@ -479,6 +482,7 @@ h4 {
     margin: 5%;
     white-space: nowrap;
   }
+// images before after Menu1
 }
 .premier_traitvert::before {
   background-image: url("../images/menuvert.png");
